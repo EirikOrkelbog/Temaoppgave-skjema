@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="CSS/reset.css">
+		<link rel="stylesheet" href="CSS/style.css">
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;600&display=swap" rel="stylesheet">
+		<title>Contact Form</title>
+	</head>
+
+	<body>
+		<header>
+			<h1>Contact Us</h1>
+			<p>Any questions or remarks? Just write us a message!</p>
+		</header>
+		<section class="container-all">
+			<aside>
+				<section class="aside-container">
+					<div>
+						<h2>Contact Information</h2>
+						<p class="content-info">Fill up the form and our Team will get back to you within 24 hours.</p>
+					</div>
+					<div class="contact-links-wrapper">
+						<div class="contact-links-container">
+							<img src="Assets/call_24px_rounded.svg" alt="">
+							<a href="#" id="contact-links">+0123 4567 8910</a>
+						</div>
+						<div class="contact-links-container">
+							<img src="Assets/email_24px_rounded.svg" alt="">
+							<a href="#" id="contact-links">hello@kristiania.no</a>
+						</div>
+						<div class="contact-links-container">
+							<img src="Assets/location_on_24px_rounded.svg" alt="">
+							<a href="#" id="contact-links">Rosenkrantz'gate 16, 0160 Oslo</a>
+						</div>
+					</div>
+					<div class="social-container">
+						<a href=""><img src="Assets/facebook.svg" alt=""></a>
+						<a href=""><img src="Assets/twitter.svg" alt=""></a>
+						<a href=""><img src="Assets/instagram.svg" alt=""></a>
+						<a href=""><img src="Assets/linkedin.svg" alt=""></a>
+					</div>
+					<div class="rings">
+						<img src="Assets/Ellipse big.svg" id="big" alt="">
+						<img src="Assets/Ellipse small.svg" id="small" alt="">
+					</div>
+				</section>
+			</aside>
+			<main>
+				<section class="form-container">
+					<form action="#">
+						<div class="personal-info-grid">
+							<p>
+								<label for="name">First Name</label>
+								<input type="text" id="name" name="first-name" size="40" required>
+							</p>
+							<p>
+								<label for="last-name">Last Name</label>
+								<input type="text" id="last-name" name="last-name" size="40" required>
+							</p>
+							<p>
+								<label for="mail">E-mail</label>
+								<input type="email" id="mail" name="usermail" placeholder="example@gmail.com" size="40" required>
+							</p>
+							<p>
+								<label for="number">Phone Number</label>
+								<input type="tel" id="number" name="number" placeholder="+0123 4567 8910" size="40" required>
+							</p>
+						</div>
+						
+						<p class="short-text">What can we help you with?</p>
+						
+						<fieldset>
+							<ul class="radio-container">
+								<li>
+									<label for="web-design">
+									<input type="radio" id="web-design" name="service" value="web-design" class="radio-margin" checked>Web Design</label>
+								</li>
+								<li>
+									<label for="web-development">
+									<input type="radio" id="web-development" name="service" value="web-development" class="radio-margin">Web Development</label>
+								</li>
+								<li>
+									<label for="logo-design">
+									<input type="radio" id="logo-design" name="service" value="logo-design" class="radio-margin">Logo Design</label>
+								</li>
+								<li>
+									<label for="other">
+									<input type="radio" id="other" name="service" value="other" class="radio-margin">Other</label>
+								</li>
+							</ul>
+						</fieldset>
+						<p class="message">
+							<label for="message">Message</label><br>
+							<input type="text" id="message" name="message" size="100" placeholder="Write your message..">
+						</p>
+						<a href="submitted.html"><button class="button" type="button" id="send-message">Send Message</button></a>
+					</form>
+				</section>
+			</main>
+		</section>
+	</body>
+
+</html>

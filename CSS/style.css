@@ -1,0 +1,169 @@
+
+body {
+	padding: 20px;
+	background-color: rgba(249, 249, 251, 1);
+}
+
+header {
+	background-color: rgba(249, 249, 251, 1);
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.container-all {
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+	width: 70%;
+	margin: auto;
+	display: flex;
+}
+
+
+.aside-container {
+	background-color: rgba(62, 32, 147, 1);
+	border-radius: 10px;
+	padding: 30px;
+	width: 260px;
+	position: relative;
+	overflow: hidden;
+}
+
+
+
+h1 {
+	color: rgba(2, 4, 74, 1);
+	font-weight: 600;
+	font-size: 40px;
+}
+
+h2 {
+	color: white;
+	font-weight: bold;
+}
+
+p {
+	color: rgba(185, 175, 216, 1);
+	font-size: 18px;
+}
+
+.content-info {
+	font-size: 15px;
+	margin: 10px 0 10px 0;
+}
+
+#contact-links {
+	text-decoration: none;
+	color: white;
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+.contact-links-container {
+	display: flex;
+	align-items: center;
+	margin: 20px 0 20px 0;
+}
+
+.contact-links-wrapper {
+	margin: 40px 0 160px 0;
+}
+
+
+.social-container {
+	display: flex;
+	justify-content: space-between;
+	width: 40%;
+}
+
+
+
+#big {
+	z-index: 3;
+	position: absolute;
+	top: 70%;
+	left: 60%;
+}
+
+
+#small {
+	position: absolute;
+	top: 70%;
+	left: 60%;
+	z-index: 4;
+}
+
+
+
+
+/* Form */
+
+
+
+fieldset, input {
+	border: none;
+}
+
+input {
+	border-bottom: 1px solid rgba(217, 217, 228, 1);
+}
+
+
+
+label {
+	color: black;
+}
+
+ul {
+	list-style-type: none;
+}
+
+
+button {
+	color: white;
+	background-color: rgba(62, 32, 147, 1);
+	padding: 10px 30px 10px 30px;
+	border-radius: 10px;
+	border: 1px solid rgba(62, 32, 147, 1);
+	float: right;
+}
+
+button:hover {
+	cursor: pointer;
+	background-color: rgba(126, 83, 249, 1);
+	border: 1px solid rgba(126, 83, 249, 1);
+}
+
+
+
+.radio-container {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.radio-margin {
+	margin-right: 10px;
+}
+
+
+.form-container {
+	padding: 40px;
+}
+
+
+.personal-info-grid {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 25px 80px;
+}
+
+.short-text {
+	color: rgba(13, 16, 83, 1);
+   font-size: 22px;
+	margin: 40px 0 20px 0;
+}
+
+.message {
+	margin: 40px 0 60px 0;
+}
