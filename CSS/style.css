@@ -10,27 +10,6 @@ header {
 	margin-bottom: 30px;
 }
 
-.container-all {
-	background-color: white;
-	padding: 20px;
-	border-radius: 10px;
-	width: 70%;
-	margin: auto;
-	display: flex;
-}
-
-
-.aside-container {
-	background-color: rgba(62, 32, 147, 1);
-	border-radius: 10px;
-	padding: 30px;
-	width: 260px;
-	position: relative;
-	overflow: hidden;
-}
-
-
-
 h1 {
 	color: rgba(2, 4, 74, 1);
 	font-weight: 600;
@@ -47,17 +26,38 @@ p {
 	font-size: 18px;
 }
 
+.container-all {
+	display: flex;
+	flex-direction: column;
+	background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+	width: 70%;
+	margin: auto;
+}
+
+
+
+
+/* Aside */
+
+a > img {
+	height: 12px;
+}
+
+.aside-container {
+	background-color: rgba(62, 32, 147, 1);
+	border-radius: 10px;
+	padding: 30px;
+	position: relative;
+	overflow: hidden;
+}
+
 .content-info {
 	font-size: 15px;
 	margin: 10px 0 10px 0;
 }
 
-#contact-links {
-	text-decoration: none;
-	color: white;
-	margin-left: 10px;
-	font-size: 12px;
-}
 
 .contact-links-container {
 	display: flex;
@@ -76,7 +76,12 @@ p {
 	width: 40%;
 }
 
-
+#contact-links {
+	text-decoration: none;
+	color: white;
+	margin-left: 10px;
+	font-size: 12px;
+}
 
 #big {
 	z-index: 3;
@@ -84,7 +89,6 @@ p {
 	top: 70%;
 	left: 60%;
 }
-
 
 #small {
 	position: absolute;
@@ -98,8 +102,6 @@ p {
 
 /* Form */
 
-
-
 fieldset, input {
 	border: none;
 }
@@ -108,7 +110,9 @@ input {
 	border-bottom: 1px solid rgba(217, 217, 228, 1);
 }
 
-
+input[type=text], input[type=email], input[type=tel] {
+	width: 100%; 
+}
 
 label {
 	color: black;
@@ -117,7 +121,6 @@ label {
 ul {
 	list-style-type: none;
 }
-
 
 button {
 	color: white;
@@ -134,36 +137,76 @@ button:hover {
 	border: 1px solid rgba(126, 83, 249, 1);
 }
 
-
+.form-container {
+	padding: 30px;
+}
 
 .radio-container {
 	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	flex-direction: column;
 }
 
 .radio-margin {
 	margin-right: 10px;
 }
 
-
-.form-container {
-	padding: 40px;
+.personal-info {
+	display: flex;
+	flex-direction: column;
 }
 
+.personal-info-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
 
-.personal-info-grid {
-	display: grid;
-	grid-template-columns: 1fr 1fr;
-	gap: 25px 80px;
+.personal-info-label {
+	width: 100%;
 }
 
 .short-text {
 	color: rgba(13, 16, 83, 1);
    font-size: 22px;
-	margin: 40px 0 20px 0;
+	margin: 40px 0 10px 0;
 }
 
 .message {
+	display: flex;
+	justify-content: space-between;
 	margin: 40px 0 60px 0;
+}
+
+.message-label {
+	margin-right: 20px;
+}
+
+
+
+/* Large size screen */
+
+@media screen and (min-width: 992px) {
+	
+	.container-all {
+		flex-direction: row;
+	}
+
+	.personal-info {
+		flex-direction: row;
+		gap: 20px;
+	}
+
+	.personal-info-wrapper {
+		flex-direction: column;
+	}
+
+	.container-all {
+		width: 100%;
+		max-width: 992px;
+	}
+
+	a > img {
+		height: 15px;
+	}
+
 }

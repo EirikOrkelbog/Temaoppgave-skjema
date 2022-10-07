@@ -36,10 +36,10 @@
 						</div>
 					</div>
 					<div class="social-container">
-						<a href=""><img src="Assets/facebook.svg" alt=""></a>
-						<a href=""><img src="Assets/twitter.svg" alt=""></a>
-						<a href=""><img src="Assets/instagram.svg" alt=""></a>
-						<a href=""><img src="Assets/linkedin.svg" alt=""></a>
+						<a href=""><img src="Assets/facebook.svg" alt="facebook link"></a>
+						<a href=""><img src="Assets/twitter.svg" alt="twitter link"></a>
+						<a href=""><img src="Assets/instagram.svg" alt="instagram link"></a>
+						<a href=""><img src="Assets/linkedin.svg" alt="linkedin link"></a>
 					</div>
 					<div class="rings">
 						<img src="Assets/Ellipse big.svg" id="big" alt="">
@@ -50,23 +50,30 @@
 			<main>
 				<section class="form-container">
 					<form action="#">
-						<div class="personal-info-grid">
-							<p>
-								<label for="name">First Name</label>
-								<input type="text" id="name" name="first-name" size="40" required>
-							</p>
-							<p>
-								<label for="last-name">Last Name</label>
-								<input type="text" id="last-name" name="last-name" size="40" required>
-							</p>
-							<p>
-								<label for="mail">E-mail</label>
-								<input type="email" id="mail" name="usermail" placeholder="example@gmail.com" size="40" required>
-							</p>
-							<p>
-								<label for="number">Phone Number</label>
-								<input type="tel" id="number" name="number" placeholder="+0123 4567 8910" size="40" required>
-							</p>
+						<div class="personal-info">
+							<div class="personal-info-divider">
+								<div class="personal-info-wrapper">
+									<label for="name" class="personal-info-label">First Name</label>
+									<input type="text" id="name" name="first-name" required>
+								</div>
+
+								<div class="personal-info-wrapper">
+									<label for="last-name" class="personal-info-label">Last Name</label>
+									<input type="text" id="last-name" name="last-name" required>
+								</div>
+							</div>
+
+							<div class="personal-info-divider">
+								<div class="personal-info-wrapper">
+									<label for="mail" class="personal-info-label">E-mail</label>
+									<input type="email" id="mail" name="usermail" placeholder="example@gmail.com" required>
+								</div>
+
+								<div class="personal-info-wrapper">
+									<label for="number" class="personal-info-label">Phone Number</label>
+									<input type="tel" id="number" name="number" placeholder="+0123 4567 8910" required>
+								</div>
+							</div>
 						</div>
 						
 						<p class="short-text">What can we help you with?</p>
@@ -91,10 +98,10 @@
 								</li>
 							</ul>
 						</fieldset>
-						<p class="message">
-							<label for="message">Message</label><br>
-							<input type="text" id="message" name="message" size="100" placeholder="Write your message..">
-						</p>
+						<div class="message">
+							<label for="message" class="message-label">Message</label>
+							<input type="text" id="message" name="message" placeholder="Write your message..">
+						</div>
 						<a href="submitted.html"><button class="button" type="button" id="send-message">Send Message</button></a>
 					</form>
 				</section>
