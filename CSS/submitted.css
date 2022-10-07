@@ -19,6 +19,7 @@ section {
 h1 {
 	font-family: 'Qwitcher Grypen', cursive;
 	font-size: 8rem;
+	text-align: center;
 	color: rgba(2, 4, 74, 1);
 }
 
